@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_yellow" >
+
+    <ImageView
+        android:id="@+id/login_icon_imageV"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_icon_imageV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/login_white_bg"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/login_title_btn"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/orange_top_bg"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <EditText
+                android:id="@+id/login_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="40dp"
+                android:background="@xml/orange_edittext_selector"
+                android:hint="@string/login_name"
+                android:maxLength="16"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/question"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="14dp"
+                android:src="@drawable/orange_password_tips" />
+        </RelativeLayout>
+
+       <!-- <EditText
+            android:id="@+id/login_pwd_tips_editText"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="40dp"
+            android:background="@xml/orange_edittext_selector"
+            android:hint="@string/about"
+            android:inputType="textNoSuggestions"
+            android:maxLength="30"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"
+            android:visibility="gone" /> --> 
+
+        <Button
+            android:id="@+id/server"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@xml/orange_btn_selector"
+            android:text="@string/server"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/client"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@xml/orange_btn_selector"
+            android:text="@string/client"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:background="@color/transparent"
+        android:padding="5dp"
+        android:text="@string/about"
+        android:textColor="@xml/textcolor_selector"
+        android:textSize="16sp" />
+
+</RelativeLayout>
